@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
+    android:background="#e7e6ed"
+    tools:context=".LoginActivity">
+
+    <!-- 아이디 입력 칸 -->
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아이디"
+        android:inputType="text"/>
+
+    <!-- 비밀번호 입력 칸 -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호"
+        android:inputType="textPassword"/>
+
+    <!-- 로그인 버튼 -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"/>
+
+    <!-- 회원가입 버튼 -->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"/>
+
+    <!-- 네이버 로그인 버튼 -->
+    <Button
+        android:id="@+id/btn_naver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="네이버 로그인"/>
+</LinearLayout>

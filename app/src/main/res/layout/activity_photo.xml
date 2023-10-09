@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
+    android:background="#e7e6ed"
+    tools:context=".PhotoActivity">
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="사진 찍기"/>
+
+    <Button
+        android:id="@+id/btn_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="앨범에서 업로드하기"/>
+
+    <!-- ImageView: 선택한 사진 표시 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/> <!-- 기본적으로는 숨깁니다 -->
+
+    <!-- "예" 버튼 -->
+    <Button
+        android:id="@+id/btn_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예"
+        android:visibility="gone"/> <!-- 기본적으로는 숨깁니다 -->
+
+    <!-- "아니요" 버튼 -->
+    <Button
+        android:id="@+id/btn_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아니요"
+        android:visibility="gone"/> <!-- 기본적으로는 숨깁니다 -->
+</LinearLayout>
